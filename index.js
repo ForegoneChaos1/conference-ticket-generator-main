@@ -56,6 +56,16 @@ function tickNum() {
 //       imgElement.src = './assets/images/pattern-squiggly-line-bottom-desktop.svg';
 //     }
 //   });
+  avatarImage.addEventListener('change', function(event) {
+    // Check if the user actually selected a file
+    if (event.target.files.length > 0) {
+      const fileName = event.target.files[0].name;
+      
+      // Trigger the browser alert
+      alert(`Success! "${fileName}" has been uploaded.`);
+    }
+  });
+
 function checkWidth() {
     const imgElement = document.querySelector(".bottom-line");
     if (window.innerWidth >= 700) {
