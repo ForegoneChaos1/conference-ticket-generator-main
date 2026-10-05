@@ -88,6 +88,7 @@ input[type="email"] {
   font-size: 14px;
   outline: none;
   transition: border-color 0.3s;
+  z-index: 1;
 }
 .input-container {
   display: flex;
@@ -113,7 +114,7 @@ input::placeholder {
   background: #ff7d68;
   color: #0d0922;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -264,4 +265,63 @@ h2 span {
   text-orientation: sideways;
   color: hsl(245, 15%, 58%);
   font-size: 30px;
+}
+@media (max-width: 1000px){
+  .input-container{
+    gap: 20px;
+  }
+  .form-container{
+    max-width: none;
+    width: 70%;
+  }
+  .input-container > h1, h2{
+    width: 70%;
+  }
+  .ticket > h1, h2{
+    width: 70%;
+  }
+}
+@media(max-width: 700px){
+  .input-container > h1{
+    width: 90%;
+    font-size: 40px;
+  }
+  .input-container h2{
+    width: 90%;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+  }
+  .ticket > h1, h2{
+    width: 90%;
+  }
+  .form-container{
+    width: 90%;
+  }
+  .lines{
+    height: 40%;
+  }
+  .bottom-line{
+    width: 300px;
+    height: 300px;
+  }
+  .top-line{
+    width: 150px;
+    height: 150px;
+  }
+  .ticket-pattern{
+    width: 90%;
+    margin: auto;
+  }
+  .tick-logo img{
+    width: 240px;
+  }
+  .ticket-number{
+    top: 60px;
+  right: 20px;
+  }
+  .ticket-info figure{
+    width: 60px;
+    height: 60px;
+  }
 }

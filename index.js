@@ -47,3 +47,22 @@ function tickNum() {
     const formattedID = `#${String(randomNumber).padStart(5, '0')}`;
     ticketNumber.textContent = formattedID;
 };
+
+// window.addEventListener('scroll', function() {
+//     const imgElement = document.querySelector('.bottom-line');
+//     if (window.scrollY >= 700) {
+//       imgElement.src = './assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg';
+//     } else {
+//       imgElement.src = './assets/images/pattern-squiggly-line-bottom-desktop.svg';
+//     }
+//   });
+function checkWidth() {
+    const imgElement = document.querySelector(".bottom-line");
+    if (window.innerWidth >= 700) {
+      imgElement.src = './assets/images/pattern-squiggly-line-bottom-desktop.svg';
+    } else {
+      imgElement.src = './assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg';
+    }
+  }
+  checkWidth();
+  window.addEventListener('resize', checkWidth);
