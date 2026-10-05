@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+<body>
+  <section class="input-container">
+    <img class="top-line" src="./assets/images/pattern-squiggly-line-top.svg" alt="">
+    <img class="bottom-line" src="./assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="">
+    <img class="lines" src="./assets/images/pattern-lines.svg" alt="">
+    <img class="circle" src="./assets/images/pattern-circle.svg" alt="">
+    <figure>
+      <img src="./assets/images/logo-full.svg" alt="">
+    </figure>
+    <h1>Journey to Coding Conf 2025 Starts Here!</h1>
+    <h2>Secure your spot at next year's biggest coding conference.</h2>
+    <form class="form-container">
+      <div>
+        <label>Upload Avatar</label>
+        <div class="upload-box">
+          <label for="avatar-input">
+            <div class="upload-icon"><img src="./assets/images/icon-upload.svg" alt=""></div>
+            <div class="upload-text">Drag and drop or click to upload</div>
+          </label>
+          <input type="file" id="avatar-input" accept="image/png, image/jpeg" >
+        </div>
+        <p class="info-text">ⓘ Upload your photo (JPG or PNG, max size: 500KB).</p>
+      </div>
+
+      <div>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+      </div>
+
+      <div>
+        <label for="github">GitHub Username</label>
+        <input type="text" id="github" name="github" placeholder="@yourusername" required>
+      </div>
+
+      <button type="submit" class="submit-btn">Generate My Ticket</button>
+    </form>
+  </section>
+  <section class="ticket">
+    <img class="top-line" src="./assets/images/pattern-squiggly-line-top.svg" alt="">
+    <img class="bottom-line" src="./assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="">
+    <img class="lines" src="./assets/images/pattern-lines.svg" alt="">
+    <img class="circle" src="./assets/images/pattern-circle.svg" alt="">
+    <img class="top-circle" src="./assets/images/pattern-circle.svg" alt="">
+    <figure>
+      <a href="index.html">
+        <img src="./assets/images/logo-full.svg" alt=""></a>
+    </figure>
+    <h1>Congrats,<span class="fullnamedisplay"></span> Your ticket is ready</h1>
+    <h2>We've emailed your ticket to <span class="emaildisplay"></span> and will send updates in the run up to the
+      event.
+    </h2>
+    <div>
+      <figure class="ticket-pattern">
+        <img src="./assets/images/pattern-ticket.svg" alt="">
+        <div class="main-ticket">
+          <div><img src="./assets/images/logo-full.svg" alt="" >
+            <p>Jan 31, 2025 / Austin, TX</p>
+          </div>
+          <div class="ticket-info">
+            <figure>
+              <img src="./assets/images/image-avatar.jpg" alt="" id="avatar-display">
+            </figure>
+            <div>
+              <p class="name-ticket">Jonathan Kristof</p>
+              <div id="git">
+                <figure id="git-logo">
+                  <img src="./assets/images/icon-github.svg" alt="">
+                </figure>
+                <p class="gituserdisplay"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ticket-number">
+          <p class="tick-num">4567</p>
+        </div>
+      </figure>
+
+    </div>
+  </section>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>
